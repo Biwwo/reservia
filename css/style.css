@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*HEADER*/
+
+nav{
+  display: flex;
+  padding: 1.8% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  width: 120px;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 20px;
+  position: relative;
+}
+
+.nav-links li a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-links li a span{
+  color: rgb(30, 30, 223);
+  font-weight: bold;
+}
+
+.nav-links li a:hover{
+  color: rgb(30, 30, 223);
+  font-weight: bold;
+}
+
+.menu-top{
+  padding: 0% 4%;
+}
+
+.menu-top h1{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.search-box{
+  margin-top: 17px;
+  width: 500px;
+}
+
+.search-box input{
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+
+.search-box input[type="text"]
+{
+  background: #fff;
+  width: 215px;
+  height: 43px;
+  border: 1px solid rgb(219, 219, 219);
+  outline: none;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.search-box input[type="submit"]
+{
+  position: relative;
+  border-radius: 0 10px 10px 0;
+  width: 130px;
+  height: 44px;
+  border: 1px solid rgb(219, 219, 219);
+  outline: none;
+  color: #fff;
+  background-color: rgb(30, 30, 223);
+  cursor: pointer;
+  left: -5px;
+}
+
+.search-box input::placeholder{
+  color: black;
+}
+
+.search-box i{
+  border: 1px solid rgb(219, 219, 219);
+  background-color: rgb(219, 219, 219);
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-size: 15px;
+  padding: 13px 15px;
+  margin: -5px;
+}
+
+.filtres h3{
+  padding: 1.8% 4%;
+  font-size: 18px;
+}
+
+/*END HEADER*/
