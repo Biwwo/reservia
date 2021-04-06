@@ -1,0 +1,130 @@
+@media screen and (min-width: 601px) {
+  .header {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar button";
+  }
+  .nav_liens[data-active=true] {
+    border-top: 3px solid #0065FC;
+  }
+  .nav_liens:hover {
+    border-top: 3px solid #0065FC;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . button" "navbar navbar navbar";
+  }
+  .logo {
+    order: 0;
+  }
+  .nav_inscrire {
+    order: 1;
+  }
+  .nav_header {
+    order: 2;
+  }
+  .nav_liens {
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
+    width: 50%;
+  }
+  .nav_liens[data-active=true] {
+    border-bottom-color: #0065FC;
+  }
+  .nav_liens:hover {
+    border-bottom-color: #0065FC;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form_recherche {
+    display: flex;
+    width: 100%;
+  }
+  .input_recherche {
+    flex: 1;
+  }
+  .input_texte_recherche {
+    display: none;
+  }
+  .input_logo_recherche {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form_recherche {
+    display: flex;
+    width: 100%;
+  }
+  .input_recherche {
+    flex: 1;
+  }
+  .input_texte_recherche {
+    display: none;
+  }
+  .input_logo_recherche {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .titre_filtre {
+    width: 100%;
+  }
+  .filtre_recherche2 {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .input_texte_recherche {
+    display: block;
+  }
+  .input_logo_recherche {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hosting {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .hostingPopular {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 10rem;
+    column-gap: 2rem;
+    grid-row-start: 1;
+  }
+  .hostingPopularTitle {
+    grid-column: 1/-1;
+  }
+}
+
+@media (min-width: 925px) {
+  .hostingMain {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 925px) and (min-width: 650px) {
+  .hostingMain {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .hostingMain {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hostingPopular {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 9rem);
+  }
+}
