@@ -307,4 +307,61 @@ a{
   height: 8.75rem;
 }
 
+.activity {
+  display: grid;
+  column-gap: 2rem;
+  margin: 4rem 0;
+}
+.activityTitle {
+  grid-column: 1/-1;
+}
+.activityCard {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
+}
+.activityCard:hover {
+  transform: scale(1.01);
+}
+.activityCardWrapimg {
+  position: relative;
+  flex: 1;
+}
+.activityCardWrapimgImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.activityCardTitle {
+  margin: 1.2rem 1.5rem;
+}
+
+.footer {
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.footerColumnwrapper {
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.footerColumnwrapperColumn {
+  width: 30%;
+  padding: 2rem 2rem;
+}
+.footerColumnwrapperColumnLink {
+  display: block;
+  margin: 1rem 0;
+}
+.footerColumnwrapperColumnLink:hover {
+  text-decoration: underline;
+}
+
 /*END MAIN*/
